@@ -50,3 +50,54 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 1fr;
+  grid-template-columns: 2fr 3fr 1fr;
+  -ms-grid-rows: 1f;
+  grid-template-rows: 1f;
+}
+
+header > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+header > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+header > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+header .logoSlogan {
+  margin: 10% 0 10% 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 2;
+}
+header .logoSlogan .slogan {
+  width: 100%;
+}
+header .logoSlogan .slogan p:nth-child(2) {
+  color: #f9f5e8;
+  background-color: #c7a17a;
+  padding: 0 30px;
+}
+header .preview {
+  background-image: url(../img/preview.png);
+}

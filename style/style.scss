@@ -49,3 +49,30 @@ $lightGrayColor: #edf0f5;
   font-size: 16px;
   line-height: 20px;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 1f;
+  .logoSlogan {
+    margin: 10% 0 10% 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    #logo {
+    }
+    .slogan {
+        width: 100%;
+      p:nth-child(2) {
+        color: $accentColor1;
+        background-color: $accentColor0;
+        padding: 0 30px;
+      }
+    }
+  }
+  .preview{
+    background-image: url(../img/preview.png);
+  }
+}
